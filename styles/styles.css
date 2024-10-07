@@ -1,14 +1,26 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight: 400;
-  font-style: normal;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  box-sizing: border-box;
 }
 
 body {
   background-color: #000000;
   color: #ffffff;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
 }
 
 .nav-bar {
@@ -16,7 +28,9 @@ body {
   justify-content: space-between;
   align-content: center;
   padding: 10px 20px;
-  border-bottom: 1px solid gray;
+  border-bottom: 1px solid #363636;
+  width: 100%;
+  position: sticky;
 }
 .nav-bar button {
   background-color: transparent;
@@ -32,4 +46,179 @@ body {
   font-size: 18px;
   font-weight: 500;
   color: #ffffff;
+}
+
+.profile-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 20px;
+  width: 100%;
+  gap: 10px;
+  border-bottom: 1px solid #363636;
+}
+
+.photo-name {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+}
+.photo-name img {
+  border-radius: 50%;
+  width: 25%;
+  height: auto;
+  max-width: 100px;
+  margin: 10px 20px 10px 10px;
+}
+
+.container-name-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.name-icon-3points {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.name-icon-3points p {
+  font-size: 20px;
+  font-weight: 500;
+  color: #F5EDDE;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.buttons-header {
+  display: flex;
+  width: 100%;
+  gap: 5px;
+  margin-right: 10px;
+}
+.buttons-header button {
+  cursor: pointer;
+  border-radius: 8px;
+  border: none;
+  text-align: center;
+  color: white;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 8px 20px;
+  width: 120px;
+}
+
+.follow-button {
+  background-color: #2581f8;
+}
+.follow-button:hover {
+  background-color: #135fc2;
+}
+
+.message-button {
+  background-color: #363636;
+}
+.message-button:hover {
+  background-color: #2e2e2e;
+}
+
+.container-description-profile {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 100%;
+}
+.container-description-profile .description {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.description {
+  font-weight: bold;
+}
+
+.link-yt {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.link-yt p {
+  cursor: pointer;
+}
+.link-yt p:hover {
+  text-decoration: underline;
+}
+
+.known-followers {
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+.known-followers small {
+  color: #999;
+  font-size: 12px;
+}
+.known-followers strong {
+  font-weight: bold;
+  color: #F5EDDE;
+  font-size: 12px;
+}
+
+.post-followers-following {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  text-align: center;
+  width: 100%;
+  border-bottom: 1px solid #363636;
+}
+
+.pff {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  gap: 5px;
+  cursor: pointer;
+}
+.pff p {
+  font-size: 14px;
+}
+
+.numbers {
+  font-weight: bold;
+}
+
+.label {
+  color: #999;
+}
+
+.icons {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  width: 100%;
+  text-align: center;
+}
+
+.icon {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.post-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 5px;
+  padding: 5px;
+  width: 100%;
+}
+.post-grid .post {
+  overflow: hidden;
+}
+.post-grid .post img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  -o-object-fit: cover;
+     object-fit: cover;
 }/*# sourceMappingURL=styles.css.map */
