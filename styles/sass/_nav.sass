@@ -1,11 +1,14 @@
 .nav-bar
+  position: sticky
   display: flex
   justify-content: space-between
   align-content: center
   padding: 10px 20px
   border-bottom: 1px solid #363636
   width: 100%
-  position: sticky
+  top: 0
+  z-index: 1000
+  background-color: $background-color
   button
     background-color: transparent
     border: none
@@ -13,8 +16,6 @@
     color: $font-color
     font-size: 20px
     cursor: pointer
-    &:hover
-      background:gray
   h1
     flex-grow: 1
     text-align: center
