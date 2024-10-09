@@ -13,9 +13,23 @@
   cursor: pointer
   background: transparent
   color: $font-color
+  transition: background-color 0.3s
+  border-radius: 8px
+  &:hover
+    background-color: #363636
+
   svg
     fill: white
   i
     color: $font-color
     font-size: 20px
     cursor: pointer 
+
+/*
+  responsive
+
+@media screen and ( min-width: 768px)
+  .nav-bottom
+    display: none
+
+  
