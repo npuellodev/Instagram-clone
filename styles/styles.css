@@ -222,6 +222,8 @@ body {
   grid-gap: 2px;
   padding: 20px;
   width: 100%;
+  width: 100%;
+  margin: 0 auto;
 }
 .post-grid .post {
   aspect-ratio: 1/1;
@@ -245,7 +247,7 @@ body {
   display: none;
 }
 
-/*responsive   */
+/*responsive */
 @media (min-width: 768px) {
   .post-grid {
     width: 100%;
@@ -258,25 +260,23 @@ body {
   }
   .header-responsive {
     display: grid;
-    grid-template-columns: 150px 1fr;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
     width: 100%;
-    padding: 20px 0;
     border-bottom: 1px solid #363636;
-    gap: 50px;
   }
   .photo-responsive {
     grid-column: 1/2;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 20px;
+    padding: 40px;
   }
   .photo-responsive img {
     border-radius: 50%;
-    width: 150px;
-    height: 150px;
+    width: 100%;
+    max-width: 150px;
+    height: auto;
   }
   .name-description-responsive {
     grid-column: 2/3;
@@ -284,7 +284,6 @@ body {
     flex-direction: column;
     justify-content: center;
     gap: 10px;
-    width: 100%;
   }
   .container-icon {
     display: flex;
@@ -294,9 +293,8 @@ body {
   }
   .container-icon p {
     font-size: 20px;
-    font-weight: 500;
+    font-weight: 300;
     color: #F5EDDE;
-    text-overflow: ellipsis;
   }
   .buttons-options-responsive {
     display: flex;
@@ -311,18 +309,17 @@ body {
     color: white;
     font-size: 14px;
     font-weight: 600;
-    padding: 8px 10px;
-    width: 80px;
+    padding: 8px 16px;
   }
   .post-followers-following-responsive {
     display: flex;
     align-items: center;
-    gap: 30px;
+    gap: 40px;
   }
   .pff-responsive {
     display: flex;
     gap: 5px;
-    margin-bottom: 10px;
+    font-size: 16px;
   }
 }
 .nav-bottom {
